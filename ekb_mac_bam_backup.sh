@@ -55,7 +55,7 @@ case $choice in
 		echo "RSYNC Pressflow"
 		echo "--------------------"
 		echo " "
-		rsync -e "ssh -p 18765" -aHzvv --progress root@184.154.31.130:/home/ecwknowl/public_html/pressflow/sites/default/files/backup_migrate/manual /Users/paul/backups/ekb_server/bam/pressflow
+		rsync -e "ssh -p 18765" -aHzvv --progress root@184.154.31.130:/home/ecwknowl/public_html/pressflow/sites/default/files/private/backup_migrate/manual /Users/paul/backups/ekb_server/bam/pressflow
 		sleep 1
 		echo " "
 		echo "--------------------"
@@ -71,10 +71,8 @@ case $choice in
 
 ;;	
 		
-		
 esac
 echo " " ;
-
 # It's weird, it was giving me an error when I was running it as sudo.  
 # ok, I almost got this, but I also want to enable both modules
 # and disable them
@@ -87,10 +85,3 @@ echo " " ;
 # I bet if I run it again now it will work
 # 
 # Just ran it again on July 8, 2012.  If I go into it through the file browser # first it will work.  There is probably a way around this though
-
-
-
-
-
-
-
