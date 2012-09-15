@@ -4,8 +4,6 @@
 # and made this mac version on September 9, 2012
 #  updated the directories for the Mac
 # Did a test run of it on September 10, 2012 and it appeared to work fine
-
-
 # This is the file I should use going forward
 
 echo "which site would you like to backup?";
@@ -17,13 +15,8 @@ echo " ";
 echo "3:  Both the eKB and the Pressflow sites (and rsync);"
 echo " ";
 echo "------------------------------------------";
-
 read -p "Enter your selection: " choice;
-
 echo " "
-
-# echo $choice;
-
 case $choice in 
 	1)	echo "You selected choice #1"
 		drush @live en -y backup_migrate
